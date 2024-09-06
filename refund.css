@@ -1,0 +1,600 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 600;
+    
+}
+.header{
+    padding: 16px 12px;
+    background-color: white;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.05);
+    top: 0;
+    left: 0;
+   position: sticky;
+   z-index: 1001;
+}
+.header .header-main{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    gap: 10px;
+    max-width: 1328px;
+}
+
+.header .header-main .navbar a{
+    text-decoration: none;
+    color:#101828;
+    font-size: 20px;
+    padding: 8px 16px;
+    transition: 0.2s;
+}
+.header .header-main .navbar a:hover{
+    color: #2c56fe;
+}
+.header .header-main .navbar{
+    padding-top: 8px;
+}
+.header .header-main .navbar .logo{
+  margin-right: 60px ;
+}
+.header .header-main .navbar .Home {
+    color: #2c56fe;
+}
+.header .header-main .toggle{
+    color: #000000;
+    font-size: 23px;
+    display: none;
+}
+.header .header-main .header-button button a{
+  color: #101828;
+   font-size: 20px;
+   text-decoration: none;
+}
+.header .header-main .header-button button{
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.header .header-main .header-button .Try{
+    background-color: #172A6E;
+    
+    a{
+        color: #ffffff;
+    }
+}
+.header .header-main .header-button{
+    display: flex;
+    gap: 10px;
+}
+.header .header-main .header-button img{
+    width: 42px;
+    height: 36px;
+}
+.footer{
+    padding: 16px;
+    border-bottom:1px solid gray ;
+}
+.footer .footer-main{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    max-width: 1328px;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+.footer .footer-main .footer1{
+    
+    line-height: 30px;
+    padding-bottom:20px ;
+}
+
+.footer .footer-main .footer1 p{
+    color: #000000;
+    font-size: 16px;
+}
+
+.footer .footer-main  .footer1-1{
+   display: flex;
+   gap: 5px;
+   padding-bottom: 20px;
+    span{
+        color: #000000;
+        font-size: 16px;
+    }
+}
+.footer .footer-main  .footer1-2{
+    border-radius: 10px;
+    img{
+        width: 100%;
+        width: 160px;
+    height: 55px;
+    }
+}
+.footer .footer-main .footer1-center{
+   
+}
+.footer .footer-main .footer2-center .footer2 h2{
+    color: #000000;
+    font-size: 20px;
+    margin: 0 0 24px;
+}
+.footer .footer-main .footer2-center .footer2 a{
+    color:#000000;
+    font-size: 16px;
+    text-decoration: none;
+   cursor: pointer; 
+    transition: 0.2s;
+    padding: 16px 0;
+    width: 190px;
+    height: 45px;
+   
+}
+.footer .footer-main .footer2-center .footer2 a:hover{
+    color: #2c56fe;
+}
+.footer .footer-main .footer2-center .footer2 .Home{
+    color: #2c56fe;
+} 
+.footer .footer-main .footer2-center .footer2 div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.footer .footer-main .footer2-center .footer-last a{
+    color: #101828;
+    font-size: 16px;
+    text-decoration: none;
+   cursor: pointer; 
+    transition: 0.2s;
+    padding: 16px 0;
+}
+.footer .footer-main .footer2-center .footer-last a:hover{
+    color: #2c56fe;
+}
+.footer .footer-main .footer2-center .footer-last h2{
+    color: #000000;
+    font-size: 20px;
+    margin: 0 0 24px;
+}
+.footer .footer-main .footer2-center .footer-last .Home{
+    color: #2c56fe;
+} 
+.footer .footer-main .footer2-center .footer-last div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.footer .footer-main .footer2-center{ 
+    grid-template-columns: repeat(2,1fr);
+    display: grid;
+} 
+.footer-dis{
+    padding: 16px;
+    border-bottom: 1px solid rgb(189, 184, 184);
+}
+.footer-dis-main{
+     width: 100%;
+     margin: 0 auto;
+     max-width: 1040px;
+     
+}
+.footer-dis-main p{
+    text-align: center;
+    font-size: 16px;
+    color: #000000;
+    font-weight: 500;
+    span{
+        font-weight: 600;
+    }
+}
+.footer-links{
+padding: 40px;
+}
+.footer-links .footer-links-main{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1328px;
+}
+.footer-links .footer-links-main p{
+    font-size: 17px;
+    color: #000000;
+    font-weight: 500;
+}
+@media screen and (max-width:1020px) {
+    .header .header-main .navbar{
+        display: none;
+    }
+    
+    .header .header-main .toggle{
+        display: inline;
+        padding: 0px 0px;
+        height: 24px;
+        width: 24px;
+    
+        a{
+            color: #000;
+        }
+    }
+    
+    .header .header-main .header-button .logoin{
+        display: none;
+    }
+    .header .header-main .header-button .Try{
+        background-color: #ffffff;
+        border: 1px solid gray;
+    
+        a{
+            color:#172A6E
+        }
+        span{
+            display: none;
+        }
+        
+    }
+    .footer .footer-main{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media screen and (max-width:770px){
+    .footer .footer-main .footer2-center .footer2 div{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .footer .footer-main .footer2-center .footer-last div{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .footer .footer-main .footer2-center .footer2 a{
+        padding: 0px;
+        padding-bottom: 16px; 
+    }
+    .footer .footer-main .footer2-center .footer-last a{
+        padding: 0px;
+        padding-bottom: 16px;
+    }
+    .footer .footer-main  .footer1-2{
+        border-radius: 10px;
+        img{
+            width: 110px;
+        height: 55px;
+        }
+    }
+    .footer-dis{
+      display: none; 
+    }
+    .footer-links .footer-links-main{
+        display: inline;
+        text-align: center;
+      }
+      .footer-links .footer-links-main p{
+        line-height: 40px;
+        font-size: 14px;
+      }
+
+}
+@media screen and (max-width:500px) {
+    .header .header-main .header-button img{
+        width: 32px;
+        height: 30px;
+    }
+    .header .header-main .header-button .Try{
+        width: 87px;
+        height: 38px;
+        padding: 5px 10px;
+    }
+    .header .header-main .logo img{
+       width: 128px;
+       height: 26px;
+    }
+    .header .header-main .toggle{
+        padding: 0px;
+    }
+    .footer .footer-main  .footer1-2{
+        border-radius: 10px;
+        img{
+            width: 90px;
+        height: 55px;
+        }
+    }
+}
+@media screen and (max-width:375px){
+    .footer .footer-main  .footer1-2{
+        border-radius: 10px;
+        img{
+            width: 80px;
+        height: 55px;
+        }
+    }
+}
+.refund{
+ padding: 80px 16px;
+ border-bottom: 1px solid #dddddd;
+}
+.refund .refund-main{
+  max-width:560px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.refund .refund-main .refund-head{
+
+}
+.refund .refund-main .refund-head h1{
+  line-height: 70.4px;
+  font-size: 64px;
+  color: #101828;
+  font-weight: 700;
+  text-align: center;
+}
+.refund .refund-main .refund-head p{
+  line-height: 26px;
+  font-size: 20px;
+  color: #222222;
+  opacity: 0.5;
+  text-align: center;
+}
+.refund .refund-main .refund-head div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:12px;
+}
+.refund .refund-main .refund-head div a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #222222;
+    span{
+        opacity: 0.5;
+    }
+}
+.refund .refund-main .refund-head div img{
+    height: 8px;
+    width: 6px;
+}
+ .refund-main2{
+  padding: 48px 16px;
+  border-bottom: 1px solid #dddddd;
+  margin-bottom: 24px;
+}
+ .refund-main2-h{
+  display: flex;
+  flex-direction: column;
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  gap: 24px;
+}
+ .refund-main2-h .refund-1{
+    font-size: 20px;
+    line-height: 26px;
+    color: #222222;
+    opacity: 0.5;
+}
+ .refund-main2-h .refund-2{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+ .refund-main2-h .refund-2 h1{
+    color: #ff0000;
+    line-height: 35.2px;
+    font-size: 32px;
+    font-weight: 700;
+}
+ .refund-main2-h .refund-2 p{
+    font-size: 20px;
+    line-height: 26px;
+    color: #ff0000;
+    opacity: 0.5;
+}
+ .refund-main2-h .refund-3{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+ .refund-main2-h .refund-3 h1{
+    color: #ff0000;
+    line-height: 35.2px;
+    font-size: 32px;
+    font-weight: 700;
+}
+ .refund-main2-h .refund-3 p{
+    font-size: 20px;
+    line-height: 26px;
+    color: #ff0000;
+    opacity: 0.5;
+}
+ .refund-main2-h .refund-4{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+ .refund-main2-h .refund-4 h1{
+    color: #101828;
+    line-height: 35.2px;
+    font-size: 32px;
+    font-weight: 700;
+}
+ .refund-main2-h .refund-4 p{
+    font-size: 20px;
+    line-height: 26px;
+    color: #222222;
+    opacity: 0.5;
+    span{
+        color: #ff0000;
+    }
+}
+.refund-main2-h .refund-5{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+ .refund-main2-h .refund-5 h1{
+    color: #101828;
+    line-height: 35.2px;
+    font-size: 32px;
+    font-weight: 700;
+}
+ .refund-main2-h .refund-5 p{
+    font-size: 20px;
+    line-height: 26px;
+    color: #222222;
+    opacity: 0.5;
+ }
+    .refund-main2-h .refund-6{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+ .refund-main2-h .refund-6 h1{
+    color: #101828;
+    line-height: 35.2px;
+    font-size: 32px;
+    font-weight: 700;
+}
+ .refund-main2-h .refund-6 p{
+    font-size: 20px;
+    line-height: 26px;
+    color: #101828;
+    opacity: 0.5;
+}
+@media screen and (max-width:768px) {
+    .refund{
+        padding: 20px 16px;
+        border-bottom: 1px solid #dddddd;
+       }
+       .refund .refund-main .refund-head h1{
+         line-height: 30.8px;
+         font-size: 28px;
+         color: #101828;
+         font-weight: 700;
+         text-align: center;
+       }
+       .refund .refund-main .refund-head p{
+         line-height: 18.2px;
+         font-size: 14px;
+         color: #222222;
+         opacity: 0.5;
+         text-align: center;
+       }
+       .refund .refund-main .refund-head div{
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           gap:8px;
+       }
+        .refund-main2{
+         padding: 20px 16px;
+         border-bottom: 1px solid #dddddd;
+         margin-bottom: 16px;
+       }
+        .refund-main2-h{
+         display: flex;
+         flex-direction: column;
+         max-width: 1280px;
+         width: 100%;
+         margin: 0 auto;
+         gap: 16px;
+       }
+        .refund-main2-h .refund-1{
+           font-size: 14px;
+           line-height: 18.2px;
+           color: #222222;
+           opacity: 0.5;
+       }
+        .refund-main2-h .refund-2{
+           display: flex;
+           flex-direction: column;
+           gap: 12px;
+       }
+        .refund-main2-h .refund-2 h1{
+           color: #ff0000;
+           line-height: 26.4px;
+           font-size: 24px;
+           font-weight: 700;
+       }
+        .refund-main2-h .refund-2 p{
+           font-size: 14px;
+           line-height: 18.2px;
+           color: #ff0000;
+           opacity: 0.5;
+       }
+        .refund-main2-h .refund-3{
+           display: flex;
+           flex-direction: column;
+           gap: 12px;
+       }
+        .refund-main2-h .refund-3 h1{
+           color: #ff0000;
+           line-height: 26.4px;
+           font-size: 24px;
+           font-weight: 700;
+       }
+        .refund-main2-h .refund-3 p{
+           font-size: 14px;
+           line-height: 18.2px;
+           color: #ff0000;
+           opacity: 0.5;
+       }
+        .refund-main2-h .refund-4{
+           display: flex;
+           flex-direction: column;
+           gap: 12px;
+       }
+        .refund-main2-h .refund-4 h1{
+           color: #101828;
+           line-height: 26.4px;
+           font-size: 24px;
+           font-weight: 700;
+       }
+        .refund-main2-h .refund-4 p{
+           font-size: 14px;
+           line-height: 18.2px;
+           color: #222222;
+           opacity: 0.5;
+           span{
+               color: #ff0000;
+           }
+       }
+       .refund-main2-h .refund-5{
+           display: flex;
+           flex-direction: column;
+           gap: 12px;
+       }
+        .refund-main2-h .refund-5 h1{
+           color: #101828;
+           line-height: 26.4px;
+           font-size: 24px;
+           font-weight: 700;
+       }
+        .refund-main2-h .refund-5 p{
+           font-size: 14px;
+           line-height: 18.2px;
+           color: #222222;
+           opacity: 0.5;
+        }
+           .refund-main2-h .refund-6{
+           display: flex;
+           flex-direction: column;
+           gap: 12px;
+       }
+        .refund-main2-h .refund-6 h1{
+           color: #101828;
+           line-height: 26.4px;
+           font-size: 24px;
+           font-weight: 700;
+       }
+        .refund-main2-h .refund-6 p{
+           font-size: 14px;
+           line-height: 18.2px;
+           color: #101828;
+           opacity: 0.5;
+       }
+}
